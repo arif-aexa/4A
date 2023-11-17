@@ -1,0 +1,134 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.header_menu {
+  display: none;
+}
+
+.header_bar {
+  color: var(--clr-light);
+  width: var(--size-2xl);
+  height: var(--size-2xl);
+  display: block;
+  margin-right: 25px;
+}
+.header_sun {
+  display: block;
+  color: var(--clr-slate600);
+  width: var(--size-sm);
+  height: var(--size-sm);
+}
+
+/* xs
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+} */
+
+/* sm
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+} */
+
+/* md */
+@media (min-width: 768px) {
+  .header_menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    gap: 2rem;
+  }
+
+  .header_link {
+    font-size: var(--size-lg);
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--clr-slate600);
+    letter-spacing: -0.001em;
+    transition: 0.3s;
+  }
+
+  .header_link:hover {
+    color: var(--clr-rose);
+    font-size: var(--size-xl);
+  }
+
+  .header_line {
+    border: 1px solid var(--clr-rose);
+    padding-top: 1.5rem;
+  }
+
+  .header_sun {
+    display: block;
+    color: var(--clr-slate600);
+    width: var(--size-sm);
+    height: var(--size-sm);
+  }
+  .header_resume {
+    font-size: var(--size-xl);
+    margin-right: 35px;
+  }
+
+  .header_bar {
+    display: none;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .header_link {
+    font-size: var(--size-2xl);
+  }
+
+  .header_link:hover {
+    color: var(--clr-rose);
+    font-size: var(--size-xl);
+  }
+
+  .header_line {
+    border: 1px solid var(--clr-rose);
+    padding-top: 1.5rem;
+  }
+
+  .header_sun {
+    color: var(--clr-light);
+    width: var(--size-lg);
+    height: var(--size-lg);
+  }
+  .header_resume {
+    font-size: var(--size-2xl);
+  }
+
+  .header_bar {
+    display: none;
+  }
+}
+/* xl */
+@media (min-width: 1280px) {
+  .header_menu {
+    gap: 4rem;
+  }
+}
+
+/* 2xl
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+} */

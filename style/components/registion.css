@@ -1,0 +1,81 @@
+@import url();
+
+:root {
+  --success-color: rgb(24, 226, 17);
+  --error-color: red;
+}
+
+body {
+  font-family: sans-serif;
+  box-sizing: content-box;
+}
+
+.container {
+  list-style: none;
+  background-color: #fff;
+  border: 5px;
+  box-shadow: 12px 12px 24px 16px rgb(0, 0, 0, 0.1);
+  margin: auto;
+  width: 600px;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  color: dimgray;
+  font-weight: 600;
+}
+
+.form-control {
+  padding: 10px;
+  position: relative;
+}
+
+.form-control label {
+  margin-left: 1px;
+  display: block;
+  color: darkolivegreen;
+  margin-bottom: 5px;
+  text-align: justify;
+  text-transform: capitalize;
+}
+
+.form-control input {
+  border-radius: 5px;
+  padding: 10px;
+  width: 95%;
+  border: 2px solid gray;
+  font-size: 20px;
+}
+
+.form-control input:focus {
+  border-color: rgb(13, 0, 158);
+  outline: none;
+}
+
+.form-control small {
+  display: block;
+  color: darkolivegreen;
+  margin-bottom: 3px;
+  visibility: hidden;
+  text-align: justify;
+}
+
+.btn {
+  background-color: rgb(255, 0, 0);
+  width: 90%;
+  margin-bottom: 1px;
+}
+
+.btn:hover {
+  background-color: rgb(68, 255, 0);
+  width: 90%;
+}
+
+.form-control.success {
+  color: var(--error-color);
+}
+
+.form-control.error {
+  color: var(--error-color);
+}
